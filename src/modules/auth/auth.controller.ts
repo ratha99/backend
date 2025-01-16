@@ -53,6 +53,7 @@ export class AuthController {
    * Register user
    * @param payload register payload
    */
+  @Public()
   @ApiBearerAuth()
   @Post('register')
   @ApiResponse({ status: 201, description: 'Successful Registration' })
